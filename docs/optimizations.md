@@ -1,7 +1,7 @@
 # How the port runs on the PS Vita
 
-The M92 board runs at 60.05 Hz (262 lines of 424 pixels at 6.67 MHz). Measured on a PS Vita at 444 MHz in stage 1: 59.9 fps,
-the translated V33 code about 10 ms per frame, drawing 8 ms (split over two cores), the texture copy under 1 ms, the sound 70–75% of a core.
+The M92 board runs at 60.05 Hz (262 lines of 424 pixels at 6.67 MHz). Measured on a PS Vita at 444 MHz, resumed in a stage with no buttons pressed: 59 fps,
+the translated V33 code about 3 ms per frame, drawing 7 ms (split over two cores), the sound about 60% of a core. Busier scenes were not measured with this build.
 
 ## Threads
 
