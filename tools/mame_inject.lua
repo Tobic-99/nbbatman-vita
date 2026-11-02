@@ -1,7 +1,7 @@
 -- Autoboot script: spins the V33 at its reset vector, then writes each state file into the M92 video hardware through the
 -- real memory handlers and takes a snapshot. List of files in the environment variable NBB_INJECT (space separated).
-if _G.gf2_loaded then return end   -- MAME runs the autoboot script again after a soft reset
-_G.gf2_loaded = true
+if _G.inject_loaded then return end   -- MAME runs the autoboot script again after a soft reset
+_G.inject_loaded = true
 local files = {}
 for f in string.gmatch(os.getenv("NBB_INJECT"), "%S+") do files[#files + 1] = f end
 local n, idx, stage = 0, 1, 0

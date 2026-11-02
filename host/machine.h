@@ -8,7 +8,7 @@
 
 namespace machine {
 extern V33 cpu;
-bool load_roms(const std::string& dir);   // MAME "gunforc2" file names (rom/ in this project)
+bool load_roms(const std::string& dir);   // MAME "nbbatmanu" file names (rom/ in this project)
 void init();
 void run_frame(void (*on_vblank)());      // 262 lines; on_vblank at line 248 (before the IRQ)
 // Save states, only between run_frame calls and with sound::generate not running. load refuses a file of another
